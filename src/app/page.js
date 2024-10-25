@@ -1,14 +1,7 @@
 import Image from "next/image";
 export default function Home() {
   return (
-      <main>
-        <Image
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
+      <main>  
         <h1>Manjeet Singh</h1>
         <h2>I am a developer</h2>
         <h3>holla</h3>
@@ -18,18 +11,18 @@ export default function Home() {
         <a className="links">
         <Image
         className="linksImage"
-          src="/window.svg"
+          src="/codepen.png"
           alt="linkdin Logo"
-          width={20}
-          height={20}
+          width={30}
+          height={30}
           priority
         />
         <Image
         className="linksImage"
-          src="/vercel.svg"
+          src="/codepenProfile.jpeg"
           alt="Profile Image"
-          width={20}
-          height={20}
+          width={30}
+          height={30}
           priority
         />
         <p className="linksName">codepen</p>

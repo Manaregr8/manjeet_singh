@@ -30,6 +30,8 @@ main{
 }
 h1{
   font-size: 4rem;
+  font-family: "Jaro", sans-serif;
+  font-weight: 400;
 }
 h2{
   font-size: 2.5rem;
@@ -44,13 +46,13 @@ button{
   font-weight: 400;
   font-size: 20px;
   padding: 10px 20px;
-background: url(https://i.ibb.co/ryhNgxC/website-design.jpg);
+background: url(https://i.ibb.co/WHpxfvX/website-design-1.jpg);
 background-position: left top;
   text-transform: uppercase;
   color: var(--background);
-  border: 1px dashed var(--background);
+  border: none;
   border-radius: 10px;
-  transition: 2.5s all;
+  transition: 2s all;
 }
 button:hover, button:active{
   background-position: right bottom;
@@ -63,14 +65,18 @@ button:hover, button:active{
   border-radius: 15px;
   background-color: #078ab231;
   max-width: 150px;
+  text-transform: uppercase;
+  font-family: "Jaro", sans-serif;
+  font-weight: 400;
 }
 .linksImage{
   border-radius: 50%;
 }
 .linksName{
-  font-size: 14px;
-  margin-left: 20px;
+  font-size: 23px;
+  margin-left: 10px;
 }
+.code{  font-family: 'Courier New', Courier, monospace;}
 @media (max-width:850px){
   h1{
     font-size: 3.5rem;
