@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -16,8 +18,79 @@
 }
 html,
 body {
-  width:100%;
   background-color: var(--background);
   color: var(--foreground);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-
+main{
+  padding: 40px;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+h1{
+  font-size: 4rem;
+}
+h2{
+  font-size: 2.5rem;
+  font-family: "Jaro", sans-serif;
+  font-weight: 400;
+}
+h3{
+  font-size: 1.5rem;
+}
+button{
+  font-family: "Jaro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 10px 20px;
+background: url(https://i.ibb.co/ryhNgxC/website-design.jpg);
+background-position: left top;
+  text-transform: uppercase;
+  color: var(--background);
+  border: 1px dashed var(--background);
+  border-radius: 10px;
+  transition: 2.5s all;
+}
+button:hover, button:active{
+  background-position: right bottom;
+}
+.links{
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #34c8f6;
+  border-radius: 15px;
+  background-color: #078ab231;
+  max-width: 150px;
+}
+.linksImage{
+  border-radius: 50%;
+}
+.linksName{
+  font-size: 14px;
+  margin-left: 20px;
+}
+@media (max-width:850px){
+  h1{
+    font-size: 3.5rem;
+  }
+}
+@media (max-width:550px){
+  h1{
+    font-size: 2.5rem;
+  }
+  h2{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  button{
+    padding: 7px 15px;
+    font-size: 19px;
+  }
+  main{
+    padding: 15px;
+  }
+}
