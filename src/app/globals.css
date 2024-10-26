@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+:root {
+  --font-geist-sans: var(--font-geist-sans);
+  --font-geist-mono: var(--font-geist-mono);
+}
+
+.sans-font {
+  font-family: var(--font-geist-sans);
+}
+
+.mono-font {
+  font-family: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -90,12 +103,45 @@ p{
   font-family: "Playwrite GB S", cursive;
   font-optical-sizing: auto;
   font-weight: 200;
-  text-transform: capitalize;
   font-style: normal;
   cursor:default;
 }
-
-.code{  font-family: 'Courier New', Courier, monospace;}
+.codesContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #343434;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.codesTitle{
+  background-color: #313131;
+  border-bottom: 1px solid  #696969;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+}
+.margin-left{
+  margin-left: auto;
+}
+.codes{
+  padding: 10px;
+}
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color:#34c8f6
+}
+.copy{
+  background-color: #34c8f6;
+  padding: 5px;
+  border-radius: 5px;
+  color: #313131;
+  font-weight: 700;
+  cursor: pointer;
+}
 @media (max-width:850px){
   h1{
     font-size: 3.5rem;
