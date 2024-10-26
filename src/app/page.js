@@ -37,7 +37,7 @@ export default function Home() {
             <p className="mono-font margin-left copy">copy</p>
           </div>
           <div className="codes">
-          <p className="mono-font">const newVariable = document.getElementById("root");</p>
+          <p className="mono-font">const newVariable getElementById</p>
           </div>
         </div>
         <Footer />
