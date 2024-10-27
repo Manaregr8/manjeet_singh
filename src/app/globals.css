@@ -38,8 +38,6 @@ body {
 main{
   padding: 40px;
   width: 100%;
-  max-width: 1400px;
-  margin: auto;
 }
 h1{
   font-size: 4rem;
@@ -98,6 +96,7 @@ button:hover, button:active{
   font-size: 23px;
   margin-left: 10px;
   cursor: pointer;
+  object-fit:cover;
 }
 p{
   font-family: "Playwrite GB S", cursive;
@@ -121,7 +120,7 @@ p{
   flex-direction: row;
   align-items: center;
   border-radius: 5px;
-  padding: 5px;
+  padding: 5px 10px;
 }
 .margin-left{
   margin-left: auto;
@@ -141,6 +140,9 @@ a{
   color: #313131;
   font-weight: 700;
   cursor: pointer;
+}
+.paddingFoot{
+  padding: 20px 40px;
 }
 @media (max-width:850px){
   h1{
@@ -163,5 +165,8 @@ a{
   }
   main{
     padding: 15px;
+  }
+  .paddingFoot{
+    padding: 10px 15px;
   }
 }
