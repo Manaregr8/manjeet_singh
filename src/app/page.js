@@ -5,8 +5,10 @@ import MainBanner from "./components/mainBanner.js";
 export default function Home() {
   return (
       <>  
+      {/*
         <MainBanner />
         <Extra />
+        */}
       </>
   );
 }

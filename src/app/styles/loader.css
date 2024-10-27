@@ -1,12 +1,12 @@
 .loader{
-    position: absolute;
+    position: fixed;
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    width: 100vw;
     height:100vh;
     justify-content: center;
     align-items: center;
     background-color: var(--background);
-    border: 2px solid var(--foreground);
     font-size: 14px;
     animation: fadeOut 1s forwards;
 }
@@ -14,17 +14,24 @@
     font-size: 15px;
     white-space: nowrap;
     overflow: hidden;
-    animation: typewriter 4s steps(50) forwards,
-        blink 800ms steps(50) infinite normal;
+    animation: typewriter 2s steps(38) forwards,
+        blink 800ms steps(38) infinite normal;
     border-right: 5px solid black;
 }
-
+.loaderComment{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.green{
+    color: var(--foreground);
+}
 @keyframes typewriter {
     from {
         width: 0%;
     }
     to {
-        width: 455px;
+        width: 420px;
     }
 }
 
@@ -35,5 +42,23 @@
 
     to {
         border-color: transparent;
+    }
+}
+@media (max-width:487px){
+
+    .loader p{
+        font-size: 10px;
+    }
+    @keyframes typewriter {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 280px;
+        }
+    }
+    .loaderimage{
+        width:50px;
+        height: 50px;
     }
 }
