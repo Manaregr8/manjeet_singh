@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import Styles from "../styles/navbar.css";
 
-export default function navbar(){
+export default function Navbar(){
     useEffect(() => {
         const menuToggler = document.getElementsByClassName("menuToggler")[0];
         const navLinks = document.getElementsByClassName("navlinks")[0];
