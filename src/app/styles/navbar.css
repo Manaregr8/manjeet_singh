@@ -1,0 +1,147 @@
+
+
+nav{
+    width: 100%;
+    padding: 50px 50px 0 50px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h5{
+    transform: scaleY(1.5);
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 30px;
+    font-style: normal;
+}
+.navlinks{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+a{
+  transform: scaleY(1.2);
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 19px;
+    font-style: normal;
+    margin: 0 20px;
+    padding-bottom: 5px;
+    color: #aaaaaa;
+    margin-top: auto;
+}
+a::before{
+    content: "";
+    position:absolute;
+    height: 2px;
+    background-color: #34c8f6;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.3s transform ease-in-out;
+}
+button{
+    font-size: 22px;
+}
+a:hover{
+    color: white;
+}
+a:hover::before{
+    transform: scaleX(1);
+}
+.menuToggler{
+  display: none;
+}
+.hireMe{
+  display: block;
+}
+@media (max-width:998px){
+    a{
+        font-size: 16px;
+        margin: 0 10px;
+    }
+    h5{
+        font-size: 22px;
+    }
+    button{
+        font-size:20px;
+    }
+}
+@media (max-width:800px){
+nav{
+    padding: 30px 30px 10px 30px;
+}
+a{
+    font-size: 15px;
+}
+}
+@media (max-width:705px){
+    .navlinks{
+        position: absolute;
+        top:53px;
+        right: 30px;
+    flex-direction: column;
+    }
+    a{
+        width: 100px;
+        text-align: center;
+        padding: 10px 20px;
+        font-family: "Jaro", sans-serif;
+        background: url(https://i.ibb.co/WHpxfvX/website-design-1.jpg);
+        background-position: left top;
+        text-transform: uppercase;
+        color: var(--background);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 0;
+        transition: 0.4s all;
+      }
+      a:hover{
+        background-position: right bottom;
+        color: black;
+      }
+      a::before {
+        content: none;
+      }
+      .navlinks a{
+        position: absolute;
+        top:-20px;
+        z-index: 20;
+      }
+      .menutoggle a:nth-child(1){
+        display: block;
+        top: 38px;
+      }
+      .menutoggle a:nth-child(2){
+        display: block;
+        top: 99px;
+      }
+      .menutoggle a:nth-child(3){
+        display: block;
+        top: 160px;
+      }
+      .menutoggle a:nth-child(4){
+        display: block;
+        top: 221px;
+      }
+      .menuToggler{
+        z-index: 1000;
+        display: block;
+      }
+      .hireMe{
+        display: none;
+      }
+      button{
+        transform: scaleY(1.2);
+        width: 100px;
+        font-size: 19px;
+      }
+      a{
+        font-size: 19px;
+      }
+}

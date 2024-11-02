@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 
 export default function Loader() {
-  const opening = `<!--Hi There! Welcome to Manjeet's Website-->`;
+  const opening = `<!--Hi There! Welcome to Manjeet's Website--!>`;
 
   useEffect(() => {
     const hideLoader = () => {

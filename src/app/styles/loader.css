@@ -8,6 +8,7 @@
     align-items: center;
     background-color: var(--background);
     font-size: 14px;
+    z-index: 10000;
     animation: fadeOut 1s forwards;
 }
 .loader p{
