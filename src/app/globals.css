@@ -31,7 +31,8 @@
 }
 html,
 body {
-  background-color: var(--background);
+  background: rgb(21, 0, 58);
+background: radial-gradient(circle, rgb(11, 0, 27) 0%, rgb(11, 0, 19) 27%, rgb(5, 0, 19) 100%);
   color: var(--foreground);
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -44,6 +45,9 @@ h1{
   font-family: "Jaro", sans-serif;
   font-weight: 400;
   cursor:default;
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 h2{
   font-size: 2.5rem;
