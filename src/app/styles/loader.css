@@ -6,10 +6,11 @@
     height:100vh;
     justify-content: center;
     align-items: center;
-    background-color: var(--background);
     font-size: 14px;
     z-index: 10000;
     animation: fadeOut 1s forwards;
+    background: rgb(21, 0, 58);
+background: radial-gradient(circle, rgb(11, 0, 27) 0%, rgb(11, 0, 19) 27%, rgb(5, 0, 19) 100%);
 }
 .loader p{
     font-size: 15px;
