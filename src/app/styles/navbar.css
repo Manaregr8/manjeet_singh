@@ -8,6 +8,7 @@ nav{
     background-color: transparent;
     justify-content: space-between;
     position: absolute;
+    z-index: 1000;
     top: 0;
     left: 0;
 }
@@ -70,7 +71,7 @@ a:hover::before{
         margin: 0 10px;
     }
     h5{
-        font-size: 22px;
+        font-size: 28px;
     }
     button{
         font-size:20px;
@@ -84,7 +85,7 @@ a{
     font-size: 15px;
 }
 }
-@media (max-width:705px){
+@media (max-width:780px){
     .navlinks{
         position: absolute;
         top:53px;
@@ -150,4 +151,38 @@ a{
       a{
         font-size: 19px;
       }
+}
+@media (max-width:667px){
+  nav{
+    padding: 15px 15px 15px 15px;
+}
+.navlinks a{
+  top:-38px;
+  right: -15px;
+}
+h5{
+  transform: scaleY(1.7);
+  font-size: 24px;
+}
+button{
+  padding: 5px 10px;
+  width: 90px;
+  border-radius: 2px;
+  height: 35px;
+}
+a{
+  text-align: left;
+  padding: 5px 10px;
+  width: 90px;
+  border-radius: 2px;
+  height: 35px;
+  font-family: "Jaro", sans-serif;
+  background: url(https://i.ibb.co/WHpxfvX/website-design-1.jpg);
+  background-position: left top;
+  text-transform: uppercase;
+  color: var(--background);
+  border: none;
+  cursor: pointer;
+  transition: 0.4s top;
+}
 }
