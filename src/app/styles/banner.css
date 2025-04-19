@@ -103,13 +103,16 @@ h1{
     .bannerContainer::after {
         font-size: 12vw;
     }
-    .bannerSize p{
-        display: none;
-    }
+   
 }
 @media (max-width:1171px){
     h1{
         font-size: 12vw;
+    }
+}
+@media (max-width:1000px){
+    .bannerSize p{
+        display: none;
     }
 }
 @media (max-width:800px){
@@ -118,10 +121,11 @@ h1{
     }
     }
     @media (max-width:667px){
-        .bannerSize{
-            background-size: cover;
-        }
         .bannerContainer{
             padding: 80px 15px 30px 15px;
+            height:500px;
+        }
+        .bannerContainer::after {
+            top: 28vh;
         }
     }
