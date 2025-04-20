@@ -43,12 +43,13 @@ const SkillsSection = () => {
       }
     });
 
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
+    const currentRef = containerRef.current;
+    if (currentRef) observer.observe(currentRef);
 
-    return () => observer.disconnect();
-  }, []);
+    return () => {
+      if (currentRef) observer.unobserve(currentRef);
+    };
+  }, [isVisible]);
 
   useEffect(() => {
     if (!isVisible) return;
@@ -63,7 +64,7 @@ const SkillsSection = () => {
     }, 150);
 
     return () => clearInterval(interval);
-  }, [isVisible]);
+  }, [isVisible, techStackWithIcons.length]);
 
   return (
     <section className={Styles.skillssection}>
@@ -71,12 +72,18 @@ const SkillsSection = () => {
         <div className={Styles.skillsheader}>
           <p className={`${Styles.language} mono-font`}>js</p>
           <div className={Styles.leftHeadSkill}>
-            <a href="#skills" className={`${Styles.copylink} mono-font`}><Copy className={Styles.copyStyles} />Copy</a>
-            <a href="#edit" className={`${Styles.editlink} mono-font`}><FilePenLine className={Styles.copyStyles} />Edit</a>
+            <a href="#skills" className={`${Styles.copylink} mono-font`}>
+              <Copy className={Styles.copyStyles} />
+              Copy
+            </a>
+            <a href="#edit" className={`${Styles.editlink} mono-font`}>
+              <FilePenLine className={Styles.copyStyles} />
+              Edit
+            </a>
           </div>
         </div>
         <div className={Styles.skillscontent}>
-          <p className='mono-font' style={{ color: '#2a81b5' }}>
+          <p className="mono-font" style={{ color: '#2a81b5' }}>
             const <span style={{ color: 'white' }}>Skills =</span> [
           </p>
           <div ref={containerRef} className={`${Styles.Skillscards} mono-font`}>
@@ -84,12 +91,12 @@ const SkillsSection = () => {
               <div key={index} className={Styles.skillItem}>
                 <Icon className={Styles.skillIcon} />
                 <span className={Styles.skillName}>
-  "{name}"{index < visibleCount - 1 ? "," : ""}
-</span>
+                  &quot;{name}&quot;{index < visibleCount - 1 ? "," : ""}
+                </span>
               </div>
             ))}
           </div>
-          <p className='mono-font' style={{ color: '#2a81b5' }}>]</p>
+          <p className="mono-font" style={{ color: '#2a81b5' }}>]</p>
         </div>
       </div>
     </section>
