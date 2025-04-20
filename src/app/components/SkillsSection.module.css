@@ -1,0 +1,181 @@
+.skillssection{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.skillscontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    font-size: 2rem;
+    flex-wrap: wrap;
+}
+.skillsheader{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #2f2f2f;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+    border:3px solid #313131;
+}
+.skillscontent{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 310px 1fr;
+    padding: 30px 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border:3px solid #313131;
+    background-color: #171717;
+}
+.copylink, .editlink{
+text-decoration: none;
+color: #e6e6e6;
+padding: 0 10px;
+}
+.copylink:hover, .editlink:hover{
+    color: #ffffff;
+}
+.copyStyles{
+    margin-right: 10px;
+}
+.Skillscards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 1.2rem;
+  }
+  
+  .skillItem {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px 12px;
+    border-radius: 8px;
+    gap: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: 'Fira Code', monospace;
+    font-size: 1.1rem; /* Match the code block heading */
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .skillName {
+    font-family: 'Fira Code', monospace;
+    font-size: 2rem;/* Ensures same size as heading */
+    color: #fff;
+    white-space: nowrap;
+  }
+  
+  
+  .skillItem:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.03);
+  }
+  
+  .skillIcon {
+    color: #2a81b5;
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    margin-top: 1px;
+  }
+  
+  
+  
+  .typing {
+    animation: typing 2.5s steps(40, end) forwards;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  
+@media (max-width: 1067px) {
+    .skillscontainer{
+        font-size: 1.5rem;
+    }
+    .copyStyles{
+        margin-right: 7px;
+        width:20px;
+    height:20px;    }
+    .skillIcon {
+        width: 20px;
+        height: 20px;
+      }
+      .skillName {
+        font-size: 1.5rem;/* Ensures same size as heading */
+      }
+    .skillscontent{
+        grid-template-columns: 240px 1fr;
+    }
+}
+@media (max-width: 845px) {
+    .skillscontainer{
+        font-size: 1rem;
+    }
+    .copyStyles{
+        margin-right: 7px;
+        width:15px;
+    height:15px;    }
+    .skillIcon {
+        width: 20px;
+        height: 20px;
+      }
+      .skillName {
+        font-size: 1rem;/* Ensures same size as heading */
+      }
+    .skillscontent{
+        grid-template-columns: 170px 1fr;
+    }
+}
+@media (max-width:800px){
+    .skillscontainer{
+        padding: 30px;
+    }
+    }
+    @media (max-width:667px){
+        .skillscontainer{
+            padding: 15px;
+        }
+        .skillsheader{
+            padding: 10px 15px;
+        }
+        .skillscontent{
+            padding: 15px 15px;
+        }
+    }
+    @media (max-width: 615px) {
+        .skillscontent {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+      @media (max-width: 410px) {
+        .skillscontainer{
+            font-size: 1rem;
+        }
+        .iconStyles{
+            width: 25px;
+            height: 25px;
+        }
+      }
+      
+      

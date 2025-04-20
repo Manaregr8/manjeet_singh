@@ -26,7 +26,7 @@ h5{
     display: flex;
     align-items: flex-end;
 }
-a{
+.navlinks a{
   transform: scaleY(1.2);
     font-family: "Public Sans", sans-serif;
     font-optical-sizing: auto;
@@ -38,7 +38,7 @@ a{
     color: #aaaaaa;
     margin-top: auto;
 }
-a::before{
+.navlinks a::before{
     content: "";
     position:absolute;
     height: 2px;
@@ -53,10 +53,10 @@ a::before{
 button{
     font-size: 22px;
 }
-a:hover{
+.navlinks a:hover{
     color: white;
 }
-a:hover::before{
+.navlinks a:hover::before{
     transform: scaleX(1);
 }
 .menuToggler{
@@ -66,7 +66,7 @@ a:hover::before{
   display: block;
 }
 @media (max-width:998px){
-    a{
+    .navlinks a{
         font-size: 16px;
         margin: 0 10px;
     }
@@ -81,7 +81,7 @@ a:hover::before{
 nav{
     padding: 30px 30px 10px 30px;
 }
-a{
+.navlinks a{
     font-size: 15px;
 }
 }
@@ -92,7 +92,7 @@ a{
         right: 30px;
     flex-direction: column;
     }
-    a{
+    .navlinks a{
         width: 100px;
         text-align: center;
         padding: 10px 20px;
@@ -108,11 +108,11 @@ a{
         transition: 2s all;
         transition: 0.4s top;
       }
-      a:hover{
+      .navlinks a:hover{
         background-position: right bottom;
         color: black;
       }
-      a::before {
+      .navlinks a::before {
         content: none;
       }
       .navlinks a{
@@ -148,7 +148,7 @@ a{
         width: 100px;
         font-size: 19px;
       }
-      a{
+      .navlinks a{
         font-size: 19px;
       }
 }
@@ -170,7 +170,7 @@ button{
   border-radius: 2px;
   height: 35px;
 }
-a{
+.navlinks a{
   text-align: left;
   padding: 5px 10px;
   width: 90px;
