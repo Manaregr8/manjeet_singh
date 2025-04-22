@@ -154,10 +154,10 @@ nav{
 }
 @media (max-width:667px){
   nav{
-    padding: 15px 15px 15px 15px;
+    padding: 30px 15px 30px 15px;
 }
 .navlinks a{
-  top:-38px;
+  top:-24.7px;
   right: -15px;
 }
 h5{

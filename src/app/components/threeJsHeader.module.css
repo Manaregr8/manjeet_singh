@@ -1,0 +1,64 @@
+.threeJsHeader{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    padding: 100px 50px 0 50px ;
+    height: fit-content;
+}
+.threeH1{
+    font-size: 8rem;
+    margin: auto;
+}
+.complex {
+    background: linear-gradient(45deg, #ff0080, #3399ff); /* Gradient like the sphere */
+    background-clip: text; /* Makes the background clip the text */
+    -webkit-background-clip: text; /* Safari fix */
+    color: transparent; /* Makes the text color transparent to show gradient */
+    display: inline-block;
+  }
+  .threeJsLogo{
+    width: 100%;
+    height: 100%;
+  }
+  @media (max-width: 1413px) {
+    .threeH1{
+        font-size: 5rem;
+    }
+  }
+  @media (max-width:912px){
+    .threeH1{
+        font-size: 4.5rem;
+    }
+    .threeJsHeader{
+        grid-template-columns: 1fr 140px;
+    }
+    }
+  @media (max-width:800px){
+    .threeJsHeader{
+        padding: 100px 30px 0px 30px;
+    }
+    .threeH1{
+        font-size: 4rem;
+    }
+    }
+    @media (max-width: 699px){
+        .threeJsHeader{
+            grid-template-columns: 1fr 120px;
+        }
+    }
+    @media (max-width:667px){
+        .threeJsHeader{
+            padding: 50px 15px 0px 15px;
+        }
+        .threeH1{
+            font-size: 3rem;
+        }
+    }
+    @media (max-width:525px){
+        .threeJsHeader{
+            grid-template-columns: 1fr 80px;
+        }
+        .threeH1{
+            font-size: 1.8rem;
+        }
+    }
