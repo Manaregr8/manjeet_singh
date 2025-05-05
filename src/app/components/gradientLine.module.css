@@ -1,0 +1,18 @@
+.wrapper {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    margin-top: 40px;
+  }
+  
+  .gradientLine {
+    width: 0;
+    height: 50px;
+    background: linear-gradient(45deg, #ff0080, #3399ff);
+    transition: width 1.5s ease-out;
+  }
+  
+  .animate {
+    width: 100%;
+  }
+  

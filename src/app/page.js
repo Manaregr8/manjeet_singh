@@ -4,6 +4,7 @@ import MainBanner from "./components/mainBanner.js";
 import SkillsSection from "./components/skillsSection.js";
 import ThreeJs from "./components/threeJs.js";
 import ThreeJsHeader from "./components/threeJsHeader.js";
+import LineGrad from "./components/lineGrad.js";
 export default function Home() {
   return (
       <>  
@@ -12,7 +13,7 @@ export default function Home() {
       <ThreeJsHeader />
       <ThreeJs />
       <SkillsSection/>
-
+<LineGrad/>
       {/*
     <Extra />
       */}
