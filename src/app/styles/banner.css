@@ -1,6 +1,7 @@
 .bannerContainer{
     position: relative;
-    height: 100vh;
+    height: 100%;
+    aspect-ratio: 16/10;
     width: 100%;
     padding: 130px 50px 50px 50px;
     display: flex;
@@ -8,22 +9,30 @@
     justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
+    overflow-x: hidden;
+    /* allow flex children to shrink and avoid intrinsic minimum width causing horizontal overflow */
+    min-width: 0;
 }
-.bannerContainer::after {
+.programmerHeading {
     position: absolute;
-    content: "PROGRAMMER";
-    top: 45vh;
+    top: 50%;
+    /* center horizontally & vertically and scale vertically without overwriting transforms */
+    left: 50%;
+    transform: translate(-50%, -50%) scaleY(1.5);
     width: 100%;
     filter: blur(10px);
-    transform: scaleY(1.5);
     font-family: "Public Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
-    font-size: 150px;
+    /* responsive font-size */
+    font-size: clamp(4rem, 12vw, 150px);
     font-style: normal;
     display: flex;
     justify-content: center;
     align-items: center; 
+    white-space: nowrap;
+    pointer-events: none;
+    max-width: 100%;
 }
 .bannerSize{
     width: 100%;
@@ -34,6 +43,9 @@
     background-size: contain;
     z-index: 200;
     overflow: hidden;
+    /* ensure background/content doesn't force wider layout */
+    max-width: 100%;
+    min-width: 0;
 }
 .bannerQuote{
     width: 100%;
@@ -48,6 +60,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    min-width: 0;
 }
 .secondContainer{
     width: 100%;
@@ -56,13 +69,15 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+    min-width: 0;
 }
 h1{
     transform: scaleY(1.5);
     font-family: "Public Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
-    font-size: 150px;
+    /* responsive h1 size */
+    font-size: clamp(3rem, 12vw, 150px);
     font-style: normal;
 }
 .graphic1{
@@ -72,6 +87,7 @@ h1{
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+    min-width: 0;
 }
 .bannerSize p{
     color: greenyellow;
@@ -83,6 +99,7 @@ h1{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+    min-width: 0;
 }
 .codeBlueDark{
     color: #56c0da;
@@ -118,7 +135,7 @@ h1{
   }
   
 @media (max-width:1278px){
-    .bannerContainer::after {
+    .programmerHeading {
         font-size: 12vw;
     }
    
@@ -137,7 +154,7 @@ h1{
     .bannerContainer{
         padding: 100px 30px 30px 30px;
     }
-    .bannerContainer::after {
+    .programmerHeading {
         filter: blur(2px);
     }
     }
@@ -145,8 +162,5 @@ h1{
         .bannerContainer{
             padding: 130px 15px 0px 15px;
             height:500px;
-        }
-        .bannerContainer::after {
-            top: 28vh;
         }
     }

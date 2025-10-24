@@ -76,6 +76,9 @@ export default function Banner() {
 
   return (
     <div className="bannerContainer" ref={bannerRef}>
+      <h1 className="programmerHeading">
+        PROGRAMMER
+      </h1>
       <div className="bannerSize">
         <div className="firstContainer">
           <h1 className={animate ? "animateIn" : "slideInLeft"}>
